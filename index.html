@@ -4,109 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component Library</title>
+    <title>Portfolio | AdarshBalika</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>@Typography</h3>
-    <h1>This is h1 tag</h1>
-    <h2>This is h2 tag</h2>
-    <h3>This is h3 tag</h3>
-    <p>This is paragraph tag</p>
-    <small>This is small tag</small>
-    <p>This is text is <strong>Bold</strong></p>
-
-    <hr>
-
-    <div>
-    <h3>@Containers</h3>
-
-        <div class="container">
-            <h3>Fluid container</h3>
-            <!-- <img src="images/img.svg" class="container_img" alt=""> -->
-            <p>This is fluid container which will contain info in end to end manner</p>
-        </div>
-        
-        <div class="container container-center">
-            <h3>Center container</h3>
-            <!-- <img src="images/img.svg" class="container_img" alt=""> -->
-            <p>This is center container which will contain info right in the center of page.</p>
-        </div>
-    </div>
-
-    <hr>
-
-    <div>
-    <h3>@Links</h3>
-
-        <a class="links primary_link" href="/">Primary Link</a>
-        <a class="links secondary_link" href="/">Secondary Link</a>
-    </div>
-
-    <hr>
-
-    <div>
-    <h3>@Lists</h3>
-
-        <ul class="lists-without-bullets">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-
-        <ul class="lists-without-bullets">
-            <li class="lists-inline">Inline Item 1</li>
-            <li class="lists-inline">Inline Item 2</li>
-            <li class="lists-inline">Inline Item 3</li>
-        </ul>
-
-        <ol reversed>
-            <li>Mango</li>
-            <li>Apple</li>
-            <li>Milk</li>
-        </ol>
-    </div>
-    
-    <hr>
-    <h3>@Navbar</h3>
 
     <nav class="navigation">
         <h3 class="brand-name">Brand Name</h3>
         <ul class="lists-without-bullets  list-ele">
-            <li class="lists-inline">Home</li>
-            <li class="lists-inline">About Us</li>
-            <li class="lists-inline">Contact</li>
+            <li class="lists-inline link-active"><a class="links" href="/index.html">Home</a></li>
+            <li class="lists-inline"><a class="links" href="/">Projects</a></li>
+            <li class="lists-inline"><a class="links" href="/">Blogs</a></li>
         </ul>
     </nav>
 
-    <hr>
-
-    <div>
-    <h3>@Section</h3>
-
-        <section class="section">
-            <h3>Normal Section</h3>
-            <p>
-                WebGL enables web content to use an API based on OpenGL ES 2.0 to perform 2D and 3D rendering in an HTML canvas in browsers that support it without the use of plug-ins
-            </p>
-        </section>
-
-        <section>
-            <h3>Offwhite section</h3>
-            <p>
-                WebGL enables web content to use an API based on OpenGL ES 2.0 to perform 2D and 3D rendering in an HTML canvas in browsers that support it without the use of plug-ins
-            </p>
-        </section>
+    <div class="container container-center">
+        <img src="images/img.svg" class="container_img" alt="">
+        <h2 class="header">Adarsh balika the <span class="header-inverted">web developer</span></h2>
     </div>
-<hr>
-<h3>@Footer</h3>
+    
+    <section class="section of-white">
+        <h3>Technologies</h3>
+        <p>
+            I'm familier with HTML, CSS, JavaScript, NodeJS, C++, Python and Web Hosting. 
+        </p>
+    </section>
 
-    <footer>
+    <section class="section">
+        <h3>Projects</h3>
+        <p>
+            I would like to showcase my work and thus, you can see my projects hosted online.
+        </p>
+
+        <a class="links primary_link" href="/">See Projects</a>
+    </section>
+
+    <section class="section of-white">
+        <h3>Blogs</h3>
+        <p>
+            I'm also working on some technical and non technical blogs. I like to document my journey of learning.
+        </p>
+        <a class="links secondary_link" href="/">Read Blogs</a>
+    </section>
+
+    <footer class="footer">
         <h3>Our Social Media Presence</h3>
-        <ul>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
-            <li>Twitter</li>
+        <ul class="lists-without-bullets">
+            <li class="lists-inline">LinkedIn</li>
+            <li class="lists-inline">GitHub</li>
+            <li class="lists-inline">Twitter</li>
         </ul>
     </footer>
 </body>
