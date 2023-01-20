@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h3>@Typography</h3>
@@ -13,19 +14,22 @@
     <h3>This is h3 tag</h3>
     <p>This is paragraph tag</p>
     <small>This is small tag</small>
+    <p>This is text is <strong>Bold</strong></p>
 
     <hr>
 
     <div>
     <h3>@Containers</h3>
 
-        <div>
+        <div class="container">
             <h3>Fluid container</h3>
+            <!-- <img src="images/img.svg" class="container_img" alt=""> -->
             <p>This is fluid container which will contain info in end to end manner</p>
         </div>
         
-        <div>
+        <div class="container container-center">
             <h3>Center container</h3>
+            <!-- <img src="images/img.svg" class="container_img" alt=""> -->
             <p>This is center container which will contain info right in the center of page.</p>
         </div>
     </div>
@@ -35,8 +39,8 @@
     <div>
     <h3>@Links</h3>
 
-        <a href="/">Primary Link</a>
-        <a href="/">Secondary Link</a>
+        <a class="links primary_link" href="/">Primary Link</a>
+        <a class="links secondary_link" href="/">Secondary Link</a>
     </div>
 
     <hr>
@@ -44,19 +48,19 @@
     <div>
     <h3>@Lists</h3>
 
-        <ul>
+        <ul class="lists-without-bullets">
             <li>Item 1</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
 
-        <ul>
-            <li>Inline Item 1</li>
-            <li>Inline Item 2</li>
-            <li>Inline Item 3</li>
+        <ul class="lists-without-bullets">
+            <li class="lists-inline">Inline Item 1</li>
+            <li class="lists-inline">Inline Item 2</li>
+            <li class="lists-inline">Inline Item 3</li>
         </ul>
 
-        <ol>
+        <ol reversed>
             <li>Mango</li>
             <li>Apple</li>
             <li>Milk</li>
@@ -66,12 +70,12 @@
     <hr>
     <h3>@Navbar</h3>
 
-    <nav>
-        <h3>Brand Name</h3>
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
+    <nav class="navigation">
+        <h3 class="brand-name">Brand Name</h3>
+        <ul class="lists-without-bullets  list-ele">
+            <li class="lists-inline">Home</li>
+            <li class="lists-inline">About Us</li>
+            <li class="lists-inline">Contact</li>
         </ul>
     </nav>
 
@@ -80,7 +84,7 @@
     <div>
     <h3>@Section</h3>
 
-        <section>
+        <section class="section">
             <h3>Normal Section</h3>
             <p>
                 WebGL enables web content to use an API based on OpenGL ES 2.0 to perform 2D and 3D rendering in an HTML canvas in browsers that support it without the use of plug-ins
